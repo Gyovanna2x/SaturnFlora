@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.floriculturaController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
       <BorderPane prefHeight="501.0" prefWidth="781.0">
@@ -30,7 +30,7 @@
          <left>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d268cc;" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="58.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="limpar" fitHeight="85.0" fitWidth="97.0" layoutX="58.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../Downloads/icons8-flor-100.png" />
                      </image>
@@ -53,21 +53,21 @@
                               <Font name="Arial Rounded MT Bold" size="12.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="14.0" layoutY="31.0" style="-fx-background-color: transparente; -fx-border-image-width: 0px 0px 3px; -fx-border-color: #693269;" />
+                        <TextField fx:id="personalizado" layoutX="14.0" layoutY="31.0" style="-fx-background-color: transparente; -fx-border-image-width: 0px 0px 3px; -fx-border-color: #693269;" />
                         <Text fill="WHITE" layoutX="14.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Entrega">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="12.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="14.0" layoutY="90.0" style="-fx-background-color: transparente; -fx-border-image-width: 0px 0px 3px; -fx-border-color: #693269;" />
+                        <TextField fx:id="dataEntrega" layoutX="14.0" layoutY="90.0" style="-fx-background-color: transparente; -fx-border-image-width: 0px 0px 3px; -fx-border-color: #693269;" />
                         <Text fill="WHITE" layoutX="13.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mensagem Personalizada">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="12.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="14.0" layoutY="145.0" style="-fx-background-color: transparente; -fx-border-color: #693269; -fx-border-image-width: 0px 0px 3px;" />
-                        <Button layoutX="109.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: #693269;" text="Limpar" textFill="WHITE" />
-                        <Button layoutX="18.0" layoutY="186.0" mnemonicParsing="false" style="-fx-background-color: #693269;" text="Adicionar " textFill="WHITE" />
+                        <TextField fx:id="MsgPersonalizada" layoutX="14.0" layoutY="145.0" style="-fx-background-color: transparente; -fx-border-color: #693269; -fx-border-image-width: 0px 0px 3px;" />
+                        <Button layoutX="109.0" layoutY="186.0" mnemonicParsing="false" onAction="#limpar" style="-fx-background-color: #693269;" text="Limpar" textFill="WHITE" />
+                        <Button layoutX="18.0" layoutY="186.0" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: #693269;" text="Cadastrar" textFill="WHITE" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="329.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0">

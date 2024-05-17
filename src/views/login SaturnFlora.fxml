@@ -36,7 +36,7 @@
                         <Font name="Arial Rounded MT Bold" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="68.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passaword">
+                  <Text fill="WHITE" layoutX="68.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="14.0" />
                      </font>
